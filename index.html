@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Analyzer</h1>
+
+    <form id="uploadForm">
+      <label>Select Resume File (PDF/Image):</label>
+      <input type="file" id="file" name="file" required />
+
+      <label>Select Job Role:</label>
+      <select id="job_role" name="job_role" required>
+        <option value="">-- Select --</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Web Developer">Web Developer</option>
+        <option value="Android Developer">Android Developer</option>
+        <option value="AI Engineer">AI Engineer</option>
+        <option value="DevOps Engineer">DevOps Engineer</option>
+        <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+        <option value="Cloud Engineer">Cloud Engineer</option>
+      </select>
+
+      <button type="submit">Analyze Resume</button>
+    </form>
+
+    <div id="result" style="display:none;">
+      <h2>Result:</h2>
+      <p><strong>ATS Score:</strong> <span id="score"></span>/100</p>
+      <p><strong>Matched Keywords:</strong> <span id="matched"></span></p>
+      <p><strong>Missing Keywords:</strong> <span id="missing"></span></p>
+
+      <h3>AI Suggestions:</h3>
+      <pre id="ai_suggestions"></pre>
+
+      <button id="downloadBtn">Download Report (PDF)</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

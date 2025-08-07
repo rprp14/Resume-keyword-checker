@@ -1,0 +1,5 @@
+{
+  "Data Scientist": ["Python", "Machine Learning", "Pandas", "Numpy", "Deep Learning", "Data Visualization", "Statistics"],
+  "Web Developer": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "REST API"],
+  "Software Engineer": ["Java", "Python", "OOP", "Git", "Algorithms", "System Design"]
+}
